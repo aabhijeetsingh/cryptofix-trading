@@ -1,0 +1,217 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cryptefix - Login Page</title>
+
+     <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+<!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+ <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+      background: rgb(31, 31, 31);
+    overflow-x: hidden;
+    }
+
+    /* Style the logo and name */
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .logo h1 {
+      color: white;
+      font-size: 36px;
+      margin-left: 20px;
+      
+    }
+
+    /* Style the slogan */
+    .slogan {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      margin: 10px ;
+      font-family: 'none';
+      margin-left: 5px ;
+      margin-right: 5px ;
+      margin-top: -10 auto;
+    }
+
+    /* Style the login form */
+    .login-form {
+      width: 250px;
+      margin: 10px auto;
+      background: rgba(39, 38, 38, 0.8);
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgb(51, 98, 255);
+      height: 550px auto;
+      
+    }
+
+    /* Style the input fields */
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-size: 10px;
+      color: white;
+      background: transparent;
+      border-bottom: 2px solid rgb(51, 98, 255);
+      border-radius: 10px;
+    }
+
+    /* Style the input placeholders */
+    .login-form input::placeholder {
+      color: white;
+    }
+
+    /* Style the sign up button */
+    .login-form button {
+      width: 100%;
+      padding: 10px ;
+      border: none ;
+      outline: none ;
+      font-size: 18px;
+      color: white;
+      background: rgb(51, 98, 255);
+      border-radius: 100px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgb(51, 98, 255);
+      margin-top: 20px;
+      
+    }
+
+    /* Style the sign up button on hover */
+    .login-form button:hover {
+      background: rgb(51, 98, 255);
+     
+    }
+
+
+
+    /* Style the background circles */
+    .circle {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      opacity: 0.2;
+    }
+
+    .circle-1 {
+      top: -50px;
+      left: -50px;
+      background: rgb(51, 98, 255);
+    }
+
+    .circle-2 {
+      top: 100px;
+      right: -50px;
+      background: rgb(51, 98, 255);
+    }
+
+    .circle-3 {
+      bottom: -50px;
+      left: 100px;
+      background: rgb(51, 98, 255);
+    }
+
+    .circle-4 {
+      bottom: 135px;
+      right: 98px;
+      background: rgb(51, 98, 255);
+    }
+  
+.scrollbar{
+  scroll-behavior: smooth;
+
+}
+
+  </style>
+</head>
+<body>
+  <!-- Add the background circles -->
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+  <div class="circle circle-3"></div>
+  <div class="circle circle-4"></div>
+
+
+
+
+
+  <!-- Add the logo and name -->
+  <div class="logo">
+    
+    <a href="#" class="logo">
+        <img src= "/assets/images/logo.svg" alt="Cryptofix Logo">
+        </a>
+
+    <h1>Cryptofix</h1>
+  </div>
+
+  <!-- Add the slogan -->
+  <div class="slogan">
+    Crypto is the future. Log in and join the revolution.
+  </div>
+
+  <!-- Add the login form -->
+  <div class="login-form">
+    <form action="login.php" method="post">
+      
+        <label>First Name</label>
+      <input type="text"name="fname" required>
+      <label>Last Name</label>
+      <input type="text"name="lname" required>
+      <label>Gender</label>
+      <input type="text"name="gender" required>
+      <label>Content Address</label>
+      <input type="tel"name="number" required>
+      <label>Address</label>
+      <input type="text"name="add" required>
+      <label>Email</label>
+      <input type="email"name="mail" required>
+      <label>Password</label>
+      <input type="password"name="pass" required>
+
+
+
+      <button type="submit">singup</button>
+    </form>
+    <p style="margin-top: 15px;" >have an account <a href="/assets/login/login.html">Login Here</a></p>
+  </div>
+
+  
+
+
+
+
+</body>
+</html>
